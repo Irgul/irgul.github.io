@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ivan Toth-Rohonyi</title>
+  <title>Site Under Maintenance</title>
   <style>
+    .maintenance-banner {
+      background: #1a1a1a;
+      color: #fafaf8;
+      text-align: center;
+      padding: 10px 24px;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+    }
+    body { margin-top: 100px !important; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Georgia', serif;
@@ -17,7 +30,6 @@
     }
     a { color: #1a1a1a; }
 
-    /* Header */
     header { border-bottom: 2px solid #1a1a1a; padding-bottom: 16px; margin-bottom: 32px; }
     header h1 { font-size: 2rem; letter-spacing: 0.04em; text-transform: uppercase; }
     header .contact {
@@ -29,7 +41,6 @@
     header .contact a { color: #555; text-decoration: none; }
     header .contact a:hover { text-decoration: underline; }
 
-    /* Sections */
     section { margin-bottom: 36px; }
     section h2 {
       font-family: 'Helvetica Neue', sans-serif;
@@ -42,7 +53,6 @@
       padding-bottom: 4px;
     }
 
-    /* Entry */
     .entry { margin-bottom: 20px; }
     .entry-header {
       display: flex;
@@ -70,42 +80,23 @@
       flex-wrap: wrap;
       margin-top: 2px;
     }
-    .entry-sub .role {
-      font-style: italic;
-      font-size: 0.9rem;
-    }
+    .entry-sub .role { font-style: italic; font-size: 0.9rem; }
     .entry-sub .date {
       font-family: 'Helvetica Neue', sans-serif;
       font-size: 0.8rem;
       color: #888;
     }
-    ul {
-      margin-top: 8px;
-      padding-left: 18px;
-    }
-    ul li {
-      font-size: 0.88rem;
-      margin-bottom: 5px;
-      color: #333;
-    }
+    ul { margin-top: 8px; padding-left: 18px; }
+    ul li { font-size: 0.88rem; margin-bottom: 5px; color: #333; }
 
-    /* Skills */
-    .skills p {
-      font-size: 0.88rem;
-      color: #333;
-    }
-
-    /* Scores */
-    .scores p {
-      font-size: 0.88rem;
-      color: #333;
-    }
+    .skills p, .scores p { font-size: 0.88rem; color: #333; }
   </style>
 </head>
 <body>
 
+  <div class="maintenance-banner">⚠️ &nbsp; This site is currently under maintenance. Check back soon.</div>
+
   <header>
-    <h1>Ivan Toth-Rohonyi</h1>
     <div class="contact">
       <a href="mailto:ivan_tothrohonyi@college.harvard.edu">ivan_tothrohonyi@college.harvard.edu</a>
       &nbsp;·&nbsp; +1 617 251 4928
@@ -172,37 +163,6 @@
       <ul>
         <li>Implemented LLM agent teams in n8n for identifying and attributing action items and decisions from meeting transcripts, channeled into Apollo and ClickUp.</li>
         <li>Developed a framework for continuous improvement of the above process based on member feedback and engagement with assigned tasks.</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="org">Harvard Generative AI Research Program</span>
-        <span class="location">Cambridge, MA</span>
-      </div>
-      <div class="entry-sub">
-        <span class="role">Researcher — "LLMs and the Collective Brain"</span>
-        <span class="date">July 2024 – Aug 2024</span>
-      </div>
-      <ul>
-        <li>Investigated LLM agent behavior in non-zero-sum games, with applications to improving multi-agent swarm capabilities through fine-tuned network setup and prompting.</li>
-        <li>Implemented a parallel-simulation framework based on ChatArena; designed and ran games targeting LLM cooperation.</li>
-        <li>Replicated results of 15 well-verified psychology papers on cooperation using LLM "participants".</li>
-      </ul>
-    </div>
-
-    <div class="entry">
-      <div class="entry-header">
-        <span class="org">Harvard Institute for Quantitative Social Science</span>
-        <span class="location">Cambridge, MA</span>
-      </div>
-      <div class="entry-sub">
-        <span class="role">Research Assistant</span>
-        <span class="date">Sept 2022 – Dec 2024</span>
-      </div>
-      <ul>
-        <li>Researched differences in access to basic welfare goods between religious groups in India under "New Wellfarism" policy; investigated causal mechanisms for outcomes in close elections.</li>
-        <li>Processed and analyzed the DHS/NFHS dataset across 20 states and 30+ years in R; applied PCA on household possessions to construct an intertemporal wealth index for over one million households.</li>
       </ul>
     </div>
 
